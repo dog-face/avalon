@@ -1,0 +1,10 @@
+<%= form_with scope: :game, url: games_path, local: true do |form| %>
+  <p>
+    <%= form.label :"Enter your nickname" %><br>
+    <%= form.text_field :"nickname" %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
