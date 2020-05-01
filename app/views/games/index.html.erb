@@ -3,14 +3,16 @@
 
 <table>
   <tr>
-    <th>nickname</th>
+    <th>Code</th>
     <th></th>
   </tr>
 
   <% @games.each do |game| %>
     <tr>
-      <td><%= game.nickname %></td>
+      <td><%= game.code %></td>
       <td><%= link_to 'Show', game_path(game) %></td>
     </tr>
   <% end %>
 </table>
+
+<%= link_to 'New Game', new_game_path %>
