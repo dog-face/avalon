@@ -1,7 +1,7 @@
 <%= form_with scope: :game, url: games_path, local: true do |form| %>
   <p>
-    <%= form.label :"Enter your nickname" %><br>
-    <%= form.text_field :"nickname" %>
+    <%= form.label :enter_a_secret_key_for_your_game %><br>
+    <%= form.text_field :code %>
   </p>
 
   <p>
